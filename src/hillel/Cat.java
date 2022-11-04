@@ -1,20 +1,20 @@
 package hillel;
 
-public class Cats extends Animals{
+public class Cat extends Animal {
     public static int totalCats;
 
-    public Cats(String name, int age) {
+    public Cat(String name, int age) {
         super(name, age);
          totalCats++;
     }
     @Override
-    public void running(int metreDistance){
+    public void run(int metreDistance){
         if (metreDistance >= 200){
             System.out.println( "Cat can not running distance!");
         } else
-            super.running(metreDistance);
+            super.run(metreDistance);
     }
-    public void swimming (int mileDistance){
+    public void swim(int mileDistance){
         System.out.println("Cat can not swimming!");
     }
 }

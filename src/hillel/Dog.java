@@ -1,23 +1,23 @@
 package hillel;
 
-public class Dogs extends Animals{
+public class Dog extends Animal {
     public static int totalDogs;
-    public Dogs(String name, int age) {
+    public Dog(String name, int age) {
         super(name,age);
         totalDogs++;
     }
 
     @Override
-    public void running(int metreDistance){
+    public void run(int metreDistance){
         if (metreDistance >= 500){
             System.out.println( "Dog can not running distance!");
         } else
-       super.running(metreDistance);
+       super.run(metreDistance);
     }
-    public void swimming (int mileDistance){
+    public void swim(int mileDistance){
         if (mileDistance >= 10){
             System.out.println("Dog can not swimming distance!");
         } else
-            super.swimming(mileDistance);
+            super.swim(mileDistance);
     }
 }

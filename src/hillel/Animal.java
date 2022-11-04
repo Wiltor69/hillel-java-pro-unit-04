@@ -1,11 +1,11 @@
 package hillel;
 
-public class Animals {
+public class Animal {
     public static int total;
     private String name;
     private int age;
 
-    public Animals(String name, int age) {
+    public Animal(String name, int age) {
         this.name = name;
         this.age = age;
         total++;
@@ -27,10 +27,10 @@ public class Animals {
         this.age = age;
     }
 
-    public void running(int metreDistance){
+    public void run(int metreDistance){
         System.out.println(name + " can run distance " + metreDistance + " m");
     }
-    public void swimming (int mileDistance){
+    public void swim(int mileDistance){
         System.out.println(name + " can swimm distance " + mileDistance + " m");
     }
 }
